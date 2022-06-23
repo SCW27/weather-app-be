@@ -14,7 +14,8 @@ class GetPlaceRequest extends FormRequest
     public function rules()
     {
         return [
-            'place' => 'required'
+            'lat' => 'required',
+            'lon' => 'required'
         ];
     }
 }
